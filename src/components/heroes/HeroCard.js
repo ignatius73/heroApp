@@ -14,7 +14,7 @@ export const HeroCard = ({
         <div className="card ms-3" style={ { maxWidth:540 }}>
             <div className="row no-gutters">
                 <div className="col-md-4">
-                    <img className="card-img" src={ `./assets/${ id }.jpg` } alt={superhero} />
+                    <img className="card-img animate__animated animate__flipInY" src={ `./assets/${ id }.jpg` } alt={superhero} />
                 </div>
                 <div class="col-md-8">
                 <h6>Nombre: { superhero }</h6>
@@ -23,11 +23,11 @@ export const HeroCard = ({
                     ( alter_ego !== characters )
                     && <p className="card-text">Personajes: { characters }</p>
                 }
-                <small>Aparición: { first_appearance }</small><br></br>
-                <small><Link to={ `./hero/id` } className="text-sm-left">Leer más...</Link></small>
+                <small>Aparición: { first_appearance }</small><br />
+                <small><Link to={ `./heroe/${ id }` } className="text-sm-left">Leer más...</Link></small>
                 </div>
             </div>
-          
+    
         </div>
     )
 }
