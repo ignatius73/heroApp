@@ -7,6 +7,6 @@ import './index.css';
 ReactDOM.render(
   
   <HeroesApp />,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
 

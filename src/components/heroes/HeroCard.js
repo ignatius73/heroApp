@@ -16,7 +16,7 @@ export const HeroCard = ({
                 <div className="col-md-4">
                     <img className="card-img animate__animated animate__flipInY" src={ `./assets/${ id }.jpg` } alt={superhero} />
                 </div>
-                <div class="col-md-8">
+                <div className="col-md-8">
                 <h6>Nombre: { superhero }</h6>
                 <h6>Alter Ego: { alter_ego }</h6>
                 {
